@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">ServiceTireFitting</string>
+    <string name="login_app_name">ServiceTireFitting</string>
+    <string name="login_inputPhone">Введите номер телефона:</string>
+    <string name="login_hintPhone">+7 (***) *** - ** - **</string>
+    <string name="login_chooseCity">Выберите город:</string>
+    <string name="login_btnContinue">Продолжить</string>
+
+    <string name="all_btnBack">Назад</string>
+
+    <string-array name="citys">
+        <item>Казань</item>
+        <item>Москва</item>
+        <item>Самара</item>
+        <item>Санкт-Петербург</item>
+    </string-array>
+
 </resources>
