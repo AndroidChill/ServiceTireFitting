@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:onClick="btnSetting"
-            app:srcCompat="@drawable/btnSetting"
+            app:srcCompat="@drawable/btn_setting"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
@@ -40,104 +32,89 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/pin_inputCode"
+        style="@style/boldText"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingRight="50dp"
-        android:paddingLeft="50dp">
+        android:paddingLeft="30pt"
+        android:paddingRight="30pt"
+        android:gravity="center"
+        >
 
-
-        <ImageView
-            android:id="@+id/pin1"
+        <TextView
+            android:id="@+id/circle_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/emptyPin" />
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_empty"
+            android:layout_gravity="center"
+             />
 
-        <ImageView
-            android:id="@+id/pin2"
+        <TextView
+            android:id="@+id/circle_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/emptyPin" />
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/circle_empty" />
 
-        <ImageView
-            android:id="@+id/pin3"
+        <TextView
+            android:id="@+id/circle_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/emptyPin" />
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/circle_empty" />
 
-        <ImageView
-            android:id="@+id/pin4"
+        <TextView
+            android:id="@+id/circle_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/emptyPin" />
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/circle_empty" />
     </LinearLayout>
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        >
+        android:layout_height="wrap_content"        >
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnOne"
+                android:onClick="clickBtnOne"
+                android:text="@string/btn_1"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+
+                 />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnTwo"
+                android:onClick="clickBtnTwo"
+                android:text="@string/btn_2"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnThree"
+                android:onClick="clickBtnThree"
+                android:text="@string/btn_3"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                 />
         </TableRow>
 
         <TableRow
@@ -145,60 +122,30 @@
             android:layout_height="match_parent">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp"
+                android:id="@+id/btnFour"
+                android:onClick="clickBtnFour"
+                android:text="@string/btn_4"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
 
                 />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnFive"
+                android:onClick="clickBtnFive"
+                android:text="@string/btn_5"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnSix"
+                android:onClick="clickBtnSix"
+                android:text="@string/btn_6"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                />
+                
+                
         </TableRow>
 
         <TableRow
@@ -206,58 +153,25 @@
             android:layout_height="match_parent">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnSeven"
+                android:onClick="clickBtnSeven"
+                android:text="@string/btn_7"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnEight"
+                android:onClick="clickBtnEight"
+                android:text="@string/btn_8"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnNine"
+                android:onClick="clickBtnNine"
+                android:text="@string/btn_9"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
         </TableRow>
 
         <TableRow
@@ -265,58 +179,28 @@
             android:layout_height="match_parent">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnFinger"
+                android:background="?android:attr/fingerprintAuthDrawable"
+                android:onClick="clickBtnFinger"
+                app:backgroundTint="@color/black"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                 />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnZero"
+                android:onClick="clickBtnZero"
+                android:text="@string/btn_0"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContinue"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="clickBtnConinue"
-                android:padding="1dp"
-                android:text="@string/login_btnContinue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-                app:srcCompat="@tools:sample/avatars"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="1dp" />
+                android:id="@+id/btnBackspace"
+                android:background="@android:drawable/ic_input_delete"
+                android:onClick="clickBtnBackspace"
+                app:backgroundTint="@color/black"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                 />
         </TableRow>
 
     </TableLayout>
+</LinearLayout>
