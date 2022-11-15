@@ -8,6 +8,40 @@
 
     </style>
 
+    <style name="corner_finger_backspace" parent="">
+        <item name="cornerSize">25%</item>
+
+    </style>
+
+    <style name="emptyView">
+
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:layout_weight">3</item>
+
+
+    </style>
+
+    <style name="circleEmptyView">
+
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:layout_weight">10</item>
+    </style>
+
+    <style name="toolbarEmptyView">
+
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:layout_weight">5</item>
+    </style>
+
 
 
     <style name="boldText">
@@ -29,7 +63,7 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:padding">1dp</item>
+
         <item name="backgroundTint">@color/white</item>
         <item name="strokeColor">@color/pink</item>
         <item name="strokeWidth">1dp</item>
