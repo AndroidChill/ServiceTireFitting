@@ -1,18 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    >
 
-    <TextView
+
+    <ImageButton
+        android:id="@+id/btnSetting"
+        android:onClick="btnSetting"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="new text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/btn_setting" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+
+
+        app:strokeColor="@color/pink"
+        app:strokeWidth="6dp"
+        tools:srcCompat="@drawable/avatar" />
+
+
+    <TextView
+
+        android:id="@+id/textViewInputPhone"
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_inputPhone"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+         />
+
+    <EditText
+        android:onClick="clickInputPhone"
+        android:id="@+id/editTextInputPhone"
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:ems="9"
+        android:hint="@string/login_hintPhone"
+        android:inputType="phone"
+
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/login_chooseCity" />
+
+
+    <Spinner
+
+        android:id="@+id/spinnerCity"
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/citys"
+
+         />
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="clickBtnConinue"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btnContinue"
+        android:text="@string/login_btnContinue"
+        android:layout_gravity="center"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:padding="1dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/pink"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+
+
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

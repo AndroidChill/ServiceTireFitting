@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="4dp"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="?attr/homeAsUpIndicator"
+            android:backgroundTint="@color/white"
+
+
+            style="?android:attr/borderlessButtonStyle"
+
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Назад"
+
+            />
+        <View
+            style="@style/toolbarEmptyView"   />
+        <ImageButton
+            android:id="@+id/btnSetting"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="btnSetting"
+            app:srcCompat="@drawable/btn_setting"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_inputCode"
+        android:layout_margin="10dp"
+        style="@style/boldText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30pt"
+        android:paddingRight="30pt"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+        <View
+            style="@style/circleEmptyView"   />
+        <TextView
+            android:id="@+id/circle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_empty"
+            android:layout_gravity="center"
+             />
+
+        <TextView
+            android:id="@+id/circle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/circle_empty" />
+
+        <TextView
+            android:id="@+id/circle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/circle_empty" />
+
+        <TextView
+            android:id="@+id/circle_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/circle_empty" />
+        <View
+            style="@style/circleEmptyView"   />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                style="@style/emptyView"   />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOne"
+                android:onClick="clickBtnOne"
+                android:text="@string/btn_1"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+
+                 />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTwo"
+                android:onClick="clickBtnTwo"
+                android:text="@string/btn_2"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnThree"
+                android:onClick="clickBtnThree"
+                android:text="@string/btn_3"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                 />
+            <View
+                style="@style/emptyView"   />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                style="@style/emptyView"   />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFour"
+                android:onClick="clickBtnFour"
+                android:text="@string/btn_4"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFive"
+                android:onClick="clickBtnFive"
+                android:text="@string/btn_5"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSix"
+                android:onClick="clickBtnSix"
+                android:text="@string/btn_6"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
+                />
+            <View
+                style="@style/emptyView"   />
+                
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                style="@style/emptyView"   />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSeven"
+                android:onClick="clickBtnSeven"
+                android:text="@string/btn_7"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEight"
+                android:onClick="clickBtnEight"
+                android:text="@string/btn_8"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNine"
+                android:onClick="clickBtnNine"
+                android:text="@string/btn_9"
+                style="@style/btnNumber"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
+            <View
+                style="@style/emptyView"   />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                 style="@style/emptyView"
+                />
+
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/imageButton2"
+
+                android:background="@drawable/btn_backspace"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                tools:srcCompat="@drawable/ic_baseline_fingerprint_24" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnZero"
+                android:onClick="clickBtnZero"
+                android:text="@string/btn_0"
+                style="@style/btnNumber"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/imageButton2"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_backspace"
+
+                tools:srcCompat="@drawable/ic_baseline_fingerprint_24" />
+
+            <View
+                style="@style/emptyView"
+               />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
