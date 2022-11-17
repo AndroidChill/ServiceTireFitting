@@ -1,12 +1,17 @@
 package beelove.store.servicetirefitting;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class PinCodeActivity extends AppCompatActivity {
     private int counterCircles = 0;
@@ -16,6 +21,8 @@ public class PinCodeActivity extends AppCompatActivity {
     private TextView circleThree;
     private TextView circleFour;
 
+    private RecyclerView recyclerView;
+    private DataAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +31,16 @@ public class PinCodeActivity extends AppCompatActivity {
         circleOne = findViewById(R.id.circle_1);
         circleTwo = findViewById(R.id.circle_2);
         circleThree = findViewById(R.id.circle_3);
-        circleFour = findViewById(R.id.circle_4);
-    }
+        circleFour = findViewById(R.id.tv_circle4);
+        recyclerView = findViewById(R.id.rv_data);
 
+        adapter = new DataAdapter();
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
+        recyclerView.setAdapter(adapter);
+
+        adapter.addDataList(Arrays.asList("foo", "bar"));
+    }
 
 
     public void changeCircle() {

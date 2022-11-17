@@ -15,7 +15,7 @@
         >
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_asdas"
             android:layout_marginRight="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             android:background="@drawable/circle_empty" />
 
         <TextView
-            android:id="@+id/circle_4"
+            android:id="@+id/tv_circle4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -109,150 +109,12 @@
             style="@style/circleEmptyView"   />
     </LinearLayout>
 
-    <TableLayout
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"        >
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <View
-                style="@style/emptyView"   />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnOne"
-                android:onClick="clickBtnOne"
-                android:text="@string/btn_1"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
-
-                 />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnTwo"
-                android:onClick="clickBtnTwo"
-                android:text="@string/btn_2"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
-                />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnThree"
-                android:onClick="clickBtnThree"
-                android:text="@string/btn_3"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
-                 />
-            <View
-                style="@style/emptyView"   />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <View
-                style="@style/emptyView"   />
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnFour"
-                android:onClick="clickBtnFour"
-                android:text="@string/btn_4"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
-
-                />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnFive"
-                android:onClick="clickBtnFive"
-                android:text="@string/btn_5"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSix"
-                android:onClick="clickBtnSix"
-                android:text="@string/btn_6"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent"
-                />
-            <View
-                style="@style/emptyView"   />
-                
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <View
-                style="@style/emptyView"   />
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSeven"
-                android:onClick="clickBtnSeven"
-                android:text="@string/btn_7"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnEight"
-                android:onClick="clickBtnEight"
-                android:text="@string/btn_8"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnNine"
-                android:onClick="clickBtnNine"
-                android:text="@string/btn_9"
-                style="@style/btnNumber"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
-            <View
-                style="@style/emptyView"   />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <View
-                 style="@style/emptyView"
-                />
+        android:layout_height="wrap_content"/>
 
 
-            <ImageButton
-                android:layout_gravity="center"
-                android:id="@+id/imageButton2"
 
-                android:background="@drawable/btn_backspace"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                tools:srcCompat="@drawable/ic_baseline_fingerprint_24" />
-
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnZero"
-                android:onClick="clickBtnZero"
-                android:text="@string/btn_0"
-                style="@style/btnNumber"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize25Percent" />
-
-            <ImageButton
-                android:layout_gravity="center"
-                android:id="@+id/imageButton2"
-                android:layout_margin="10dp"
-                android:background="@drawable/btn_backspace"
-
-                tools:srcCompat="@drawable/ic_baseline_fingerprint_24" />
-
-            <View
-                style="@style/emptyView"
-               />
-
-        </TableRow>
-
-    </TableLayout>
 </LinearLayout>
